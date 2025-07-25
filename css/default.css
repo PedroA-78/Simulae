@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-title: 'Poppins';
+    --font-body: 'Inter';
+    --text-bold: #344256;
+    --text-normal: #65768b;
+    --bg-gradient: linear-gradient(135deg, #1975d2, #2bbdee);
+    --bg-color: #f2f2f2;
+    --color-green: 74, 222, 128;
+    --color-blue: 25, 117, 210;
+    --color-orange: 249, 207, 83;
+    --color-purple: 206, 153, 242;
+    --color-red: 239, 68, 68;
+    --color-gray: 234, 237, 240;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: var(--bg-color);
+}
+
+/* HEADER */
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100dvh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+    display: flex;
+    align-items: center;
+    font-family: var(--font-title);
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    background: var(--bg-gradient);
+    padding: .1rem;
+    border-radius: .5rem;
+}
+
+.logo span {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+header p {
+    margin: 0 .5rem;
+    font-size: 2rem;
+    color: var(--text-bold);
+}
+
+/* MAIN */
+
+main {
+    font-family: var(--font-body);
+    color: var(--text-bold);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(187, 187, 187, 0.2);
+    padding: 1rem 2rem;
+    font-family: var(--font-body);
+}
+
+footer p {
+    margin: .3rem 0;
+    font-size: 1.05rem;
+    text-align: center;
+    color: var(--text-normal);
+}
+
+footer p a {
+    color: rgba(var(--color-blue));
+    text-decoration: none;
+}

@@ -1,0 +1,220 @@
+@import url('../css/default.css');
+
+/* MAIN */
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-body);
+    color: var(--text-bold);
+}
+
+/* DIV (RESULTS AWARD) */
+
+.result_award {
+    width: 42rem;
+    padding: 1.5rem 1.5rem 1.875rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.result_award_title {
+    margin: .5rem 0;
+    font-size: 1.875rem;
+}
+
+.result_award_text {
+    margin: 0;
+    color: var(--text-normal);
+}
+
+span.result_award_icon {
+    padding: .5rem;
+    border-radius: 2.5rem;
+    font-size: 2.75rem;
+    color: rgba(var(--color-blue));
+    background: rgba(var(--color-blue), .125);
+}
+
+/* DIV (RESULTS) */
+
+.results,
+.results_feedback,
+.results_actions {
+    width: 42rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(187, 187, 187, 0.4);
+    border-radius: .5rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.results_title {
+    margin: 0 0 .5rem 0;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-bold);
+}
+
+.results_percentage p {
+    margin: 0 0 .5rem 0;
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: rgba(var(--color-blue));
+}
+
+.results_percentage_progress {
+    position: relative;
+    width: 100%;
+    height: .875rem;
+    border: 1px solid rgba(187, 187, 187, 0.4);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.results_percentage_progress::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: var(--percentage);
+    height: 100%;
+    background-color: rgba(var(--color-blue));
+}
+
+.results_question {
+    margin: 1.5rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    font-family: var(--font-title);
+}
+
+.results_question_hits,
+.results_question_misses,
+.results_question_total {
+    border: 1px solid rgba(var(--color-green), .2);
+    padding: 1rem;
+    border-radius: .5rem;
+    background: rgba(var(--color-green), .1);
+}
+
+.results_question_misses {
+    border: 1px solid rgba(var(--color-red), .2);
+    background: rgba(var(--color-red), .1);
+}
+
+.results_question_total {
+    grid-column: 1 / 3;
+    border: 1px solid rgba(var(--color-gray), 1);
+    background: rgba(var(--color-gray), .7);
+}
+
+.results_question_hits p,
+.results_question_misses p,
+.results_question_total p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(var(--color-green));
+}
+
+.results_question_misses p {
+    color: rgb(var(--color-red));
+}
+
+.results_question_total p {
+    color: var(--text-normal);
+}
+
+.results_question_hits p:first-child,
+.results_question_misses p:first-child,
+.results_question_total p:first-child {
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.results_question_hits p:first-child span,
+.results_question_misses p:first-child span,
+.results_question_total p:first-child span {
+    font-size: 1.75rem;
+    margin-right: .25rem;
+}
+
+.results_question_hits p:last-child,
+.results_question_misses p:last-child,
+.results_question_total p:last-child {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* DIV (RESULTS FEEDBACK) */
+
+.results_feedback {
+    margin: 1.875rem 0;
+    text-align: center;
+}
+
+.results_feedback_title {
+    font-family: var(--font-title);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgb(var(--color-green));
+}
+
+.results_feedback_text {
+    color: var(--text-normal);
+}
+
+/* DIV (RESULTS ACTIONS) */
+
+.results_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.results_actions button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .875rem 1.5rem;
+    border: none;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-normal);
+    background-color: #f9fafb;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+.results_actions button:nth-child(2) {
+    color: #fff;
+    background-color: rgba(var(--color-blue));
+}
+
+.results_actions button:hover {
+    transform: translateY(-.125rem);
+}
+
+.actions button:last-child {
+    background: rgba(var(--color-blue));
+    color: #fff;
+}
+
+.actions button span {
+    font-size: 1.25rem;
+}

@@ -1,0 +1,135 @@
+@import url('../css/default.css');
+
+/* MAIN */
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-body);
+    color: var(--text-bold);
+}
+
+/* DIV (QUESTION NUMBER) */
+
+.question_number {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min-content;
+    height: min-content;
+}
+
+.question_number_text {
+    margin: 0 0 .25rem 0;
+    text-align: center;
+
+}
+
+.question_number_progress {
+    min-width: 10rem;
+    height: 1.5rem;
+}
+
+/* DIV (QUESTION) */
+
+.question {
+    width: 56rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question_title {
+    font-size: 1.25rem;
+}
+
+.question_options {
+    display: grid;
+    gap: 1rem;
+}
+
+.question_option {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+    border: 1px solid rgba(187, 187, 187, 0.2);
+    border-radius: .5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+.question_option:hover {
+    background-color: rgba(var(--color-blue), .05);
+}
+
+.question_option input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .5rem 0 0;
+    border: 1px solid rgb(var(--color-blue));
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.question_option input[type="radio"]:checked {
+  border-color: rgb(var(--color-blue));
+  background-color: rgb(var(--color-blue));
+  box-shadow: inset -.005rem -.005rem 0 .125rem #fff;
+}
+
+.question_option span {
+    color: rgb(var(--color-blue));
+    margin: 0 .5rem 0 0;
+}
+
+/* DIV (ACTIONS) */
+
+.actions {
+    width: 56rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actions button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--text-normal);
+    background-color: #f9fafb;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+.actions button:hover {
+    transform: translateY(-.125rem);
+}
+
+.actions button:last-child {
+    background: rgba(var(--color-blue));
+    color: #fff;
+}
+
+.actions button span {
+    font-size: 1.25rem;
+}

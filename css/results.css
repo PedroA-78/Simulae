@@ -209,12 +209,3 @@ span.result_award_icon {
 .results_actions button:hover {
     transform: translateY(-.125rem);
 }
-
-.actions button:last-child {
-    background: rgba(var(--color-blue));
-    color: #fff;
-}
-
-.actions button span {
-    font-size: 1.25rem;
-}

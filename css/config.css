@@ -1,1 +1,70 @@
 @import url('../css/default.css');
+
+/* MAIN */
+
+main {
+    display: block;
+}
+
+/* DIV (CONFIG INTRODUCTION) */
+
+.config_introduction {
+    width: 42rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 1.875rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.config_introduction_title {
+    margin: .5rem 0;
+    font-size: 1.875rem;
+}
+
+.config_introduction_text {
+    margin: 0;
+    color: var(--text-normal);
+}
+
+span.config_introduction_icon {
+    padding: .5rem;
+    border-radius: 2.5rem;
+    font-size: 2.75rem;
+    color: rgba(var(--color-blue));
+    background: rgba(var(--color-blue), .125);
+}
+
+/* DIV (CONFIG) */
+
+.config {
+    width: 42rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgba(187, 187, 187, 0.4);
+    border-radius: .5rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.config_field {
+    margin-bottom: 1.5rem;
+}
+
+.config_field_label {
+    display: flex;
+    align-items: center;
+    margin-bottom: .875rem;
+    color: var(--text-bold);
+    font-weight: 600;
+}
+
+span.config_field_icon {
+    font-size: 1.625rem;
+    margin-right: .25rem;
+}
+
+.config_field_input {
+    width: 100%;
+    padding: .5rem .875rem;
+    box-sizing: border-box;
+}

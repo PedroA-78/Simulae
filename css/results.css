@@ -1,17 +1,5 @@
 @import url('../css/default.css');
 
-/* MAIN */
-
-main {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: var(--font-body);
-    color: var(--text-bold);
-}
-
 /* DIV (RESULTS AWARD) */
 
 .result_award {

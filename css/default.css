@@ -70,6 +70,10 @@ header p {
 /* MAIN */
 
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-family: var(--font-body);
     color: var(--text-bold);
 }

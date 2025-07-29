@@ -109,6 +109,7 @@ span.review_description_icon {
     margin-top: .875rem;
 }
 
+.review_question_answer p.correct span,
 .review_question_answer p:last-child span {
     color: rgb(var(--color-green));
 }
@@ -146,7 +147,8 @@ span.review_description_icon {
     box-sizing: border-box;
 }
 
-.review_actions button {
+/* .review_actions button, */
+.review_actions a {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -156,6 +158,7 @@ span.review_description_icon {
     font-size: .875rem;
     font-weight: 600;
     text-transform: capitalize;
+    text-decoration: none;
     color: var(--text-normal);
     background-color: #f9fafb;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, .2);
@@ -163,11 +166,11 @@ span.review_description_icon {
     transition: ease-in-out 300ms;
 }
 
-.review_actions button:last-child {
+.review_actions a:last-child {
     color: #fff;
     background-color: rgba(var(--color-blue));
 }
 
-.review_actions button:hover {
+.review_actions a:hover {
     transform: translateY(-.125rem);
 }

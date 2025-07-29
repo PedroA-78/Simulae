@@ -157,6 +157,18 @@ span.result_award_icon {
     color: rgb(var(--color-green));
 }
 
+.results_feedback_title.bad {
+    color: rgb(var(--color-red));
+}
+
+.results_feedback_title.good {
+    color: rgb(var(--color-blue));
+}
+
+.results_feedback_title.great {
+    color: rgb(var(--color-green));
+}
+
 .results_feedback_text {
     color: var(--text-normal);
 }
@@ -172,7 +184,8 @@ span.result_award_icon {
     background-color: transparent;
 }
 
-.results_actions button {
+/* .results_actions button, */
+.results_actions a {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -182,6 +195,7 @@ span.result_award_icon {
     font-size: .875rem;
     font-weight: 600;
     text-transform: capitalize;
+    text-decoration: none;
     color: var(--text-normal);
     background-color: #f9fafb;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, .2);
@@ -189,11 +203,11 @@ span.result_award_icon {
     transition: ease-in-out 300ms;
 }
 
-.results_actions button:nth-child(2) {
+.results_actions a:nth-child(2) {
     color: #fff;
     background-color: rgba(var(--color-blue));
 }
 
-.results_actions button:hover {
+.results_actions a:hover {
     transform: translateY(-.125rem);
 }

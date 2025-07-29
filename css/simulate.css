@@ -1,8 +1,13 @@
 @import url('../css/default.css');
 
+main {
+    position: relative;
+}
+
 /* DIV (QUESTION NUMBER) */
 
 .question_number {
+    display: none;
     position: absolute;
     top: 2rem;
     left: 50%;
@@ -36,6 +41,13 @@
 
 .question_title {
     font-size: 1.25rem;
+}
+
+.question_title span {
+    margin-right: .25rem;
+    font-size: 1rem;
+    color: var(--text-normal);
+    text-wrap: nowrap;
 }
 
 .question_options {
@@ -83,17 +95,17 @@
     margin: 0 .5rem 0 0;
 }
 
-/* DIV (ACTIONS) */
+/* DIV (QUESTION ACTIONS) */
 
-.actions {
+.question_actions {
     width: 56rem;
     margin: 2rem auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.actions button {
+.question_actions button {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -109,15 +121,24 @@
     transition: ease-in-out 300ms;
 }
 
-.actions button:hover {
+.question_actions button:hover {
     transform: translateY(-.125rem);
 }
 
-.actions button:last-child {
+.question_actions button:nth-child(2),
+.question_actions button:last-child {
     background: rgba(var(--color-blue));
     color: #fff;
 }
 
-.actions button span {
+.question_actions button.disable {
+    background: rgba(var(--color-blue), .6);
+}
+
+.question_actions button:nth-child(2) {
+    display: none;
+}
+
+.question_actions button span {
     font-size: 1.25rem;
 }

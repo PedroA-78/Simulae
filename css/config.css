@@ -67,7 +67,7 @@ span.config_field_icon {
 .config_field_input,
 .config_field_timer {
     width: 100%;
-    padding: .575rem .875rem;
+    padding: .875rem;
     border: 1px solid #e2e8f0;
     border-radius: .375rem;
     box-sizing: border-box;
@@ -119,8 +119,6 @@ span.config_field_icon {
     background: #f9fafb;
     box-shadow: 0 0 2px rgba(var(--color-gray));
 }
-
-
 
 .config_submit button,
 .config_submit a {

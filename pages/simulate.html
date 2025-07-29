@@ -20,41 +20,18 @@
             <progress class="question_number_progress" value="1" max="30"></progress>
         </div>
         <div class="question">
-            <h2 class="question_title">Qual é o resultado da operação matemática: 15 + 27 × 3?</h2>
-            <div class="question_options">
-                <label class="question_option">
-                    <input type="radio" name="option">
-                    <span>A)</span>
-                    126
-                </label>
-
-                <label class="question_option">
-                    <input type="radio" name="option">
-                    <span>B)</span>
-                    96
-                </label>
-
-                <label class="question_option">
-                    <input type="radio" name="option">
-                    <span>C)</span>
-                    45
-                </label>
-
-                <label class="question_option">
-                    <input type="radio" name="option">
-                    <span>D)</span>
-                    42
-                </label>
-            </div>
         </div>
-        <div class="actions">
-            <button><span class="material-symbols-outlined">arrow_back</span>Anterior</button>
-            <button>Próxima<span class="material-symbols-outlined">arrow_forward</span></button>
+        <div class="question_actions">
+            <button data-action="prev"><span class="material-symbols-outlined">arrow_back</span>Anterior</button>
+            <button data-action="finish"><span class="material-symbols-outlined">check</span>Finalizar</button>
+            <button data-action="next">Próxima<span class="material-symbols-outlined">arrow_forward</span></button>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 Simulaê. Plataforma gratuita de preparação para o ENCCEJA.</p>
         <p>Desenvolvido por <a href="https://pedroa-78.github.io/">Pedro Aurelio Ramos</a> 🚀💻</p>
     </footer>
+
+    <script src="../js/questions.js"></script>
 </body>
 </html>

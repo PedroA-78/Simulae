@@ -56,8 +56,8 @@
 
                 </div>
                 <div class="config_submit">
-                    <a href="/simulation.html"><span class="material-symbols-outlined">play_arrow</span>Iniciar simulado</a>
-                    <a href="/index.html"><span class="material-symbols-outlined">home</span>Voltar ao ínicio</a>
+                    <a href="/simulado"><span class="material-symbols-outlined">play_arrow</span>Iniciar simulado</a>
+                    <a href="/"><span class="material-symbols-outlined">home</span>Voltar ao ínicio</a>
                 </div>
             </form>
         </div>

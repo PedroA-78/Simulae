@@ -18,7 +18,7 @@
         <section class="introduction">
             <h1 class="introduction_title">Prepare-se para o <span>ENCCEJA</span> de forma gratuita</h1>
             <p class="introduction_text">Pratique com simulados realistas e garanta sua certificação do ensino fundamental e médio. Questões organizadas por matéria para o seu sucesso.</p>
-            <a href="/config.html" class="introduction_simulate">
+            <a href="/configuracao" class="introduction_simulate">
                 <span class="material-symbols-outlined">play_arrow</span>
                 Iniciar simulado gratuito
             </a>

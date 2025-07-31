@@ -59,9 +59,9 @@
             </div>
         </div>
         <div class="review_actions">
-            <a href="/results.html"><span class="material-symbols-outlined">arrow_back</span>Voltar aos resultados</a>
-            <a href="/simulation.html"><span class="material-symbols-outlined">replay</span>Tentar novamente</a >
-            <a href="/index.html"><span class="material-symbols-outlined">home</span>Página inicial</a >
+            <a href="/resultados"><span class="material-symbols-outlined">arrow_back</span>Voltar aos resultados</a>
+            <a href="/simulado"><span class="material-symbols-outlined">replay</span>Tentar novamente</a >
+            <a href="/"><span class="material-symbols-outlined">home</span>Página inicial</a >
         </div>
     </main>
     <footer>

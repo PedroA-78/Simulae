@@ -46,9 +46,9 @@
             <p class="results_feedback_text">Continue praticando para melhorar ainda mais seus resultados no ENCCEJA.</p>
         </div>
         <div class="results_actions">
-            <a href="/index.html"><span class="material-symbols-outlined">home</span>Voltar ao início</a>
-            <a href="/reviews.html"><span class="material-symbols-outlined">visibility</span>Conferir respostas</a>
-            <a href="/simulation.html"><span class="material-symbols-outlined">replay</span>Tentar novamente</a>
+            <a href="/"><span class="material-symbols-outlined">home</span>Voltar ao início</a>
+            <a href="/revisao"><span class="material-symbols-outlined">visibility</span>Conferir respostas</a>
+            <a href="/simulado"><span class="material-symbols-outlined">replay</span>Tentar novamente</a>
         </div>
     </main>
     <footer>

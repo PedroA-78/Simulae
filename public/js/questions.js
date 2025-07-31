@@ -113,7 +113,7 @@ function setTriggers() {
                 }
             } else if (action == 'finish') {
                 storage()
-                window.location.href = '/results.html'
+                window.location.href = '/resultados'
                 return
             }
             

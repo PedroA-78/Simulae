@@ -50,7 +50,7 @@ function setScore() {
 
 function getAnswer(letter, index) {    
     const options = ['A', 'B', 'C', 'D']
-    const isAnswered = typeof letter !== 'object' 
+    const isAnswered = typeof letter !== 'object' && typeof letter !== 'undefined'
     
     if (isAnswered) {
         const answer = questions[index].answers[options.indexOf(letter)]
@@ -100,12 +100,12 @@ function setQuestions() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    if (window.location.href.indexOf('results') != -1) {
+    if (window.location.href.indexOf('resultados') != -1) {
         checkAnswers()
         setScore()
     }
 
-    if (window.location.href.indexOf('review') != -1) {
+    if (window.location.href.indexOf('respostas') != -1) {
         setQuestions()
     }
 })
